@@ -9,6 +9,7 @@
 #include <iostream>
 #include <direct.h>
 #include <thread>
+#include <fstream>
 #include "wallcycler/util/posixtime.h"
 
 using namespace wallcycler;
@@ -28,6 +29,21 @@ std::string image_extension_for_mimetype(const std::string& mime_type)
 		return "bmp";
 	}
 	return "jpg";
+}
+
+bool file_exists(const std::string& name)
+{
+	std::ifstream f(name.c_str());
+	if(f.good())
+	{
+		f.close();
+		return true;
+	}
+	else
+	{
+		f.close();
+		return false;
+	}
 }
 
 std::string prev_wallpaper_filename;
@@ -92,9 +108,9 @@ int main(int argc, char*argv[])
 				std::string random_file_name;
 				do
 				{
-					random_file_name = std::to_string(std::rand())+"."+image_extension_for_mimetype(response.getHeader("Content-Type"));
+					random_file_name = std::to_string(std::rand())+std::to_string(std::rand())+std::to_string(std::rand())+"."+image_extension_for_mimetype(response.getHeader("Content-Type"));
 				}
-				while(random_file_name==prev_wallpaper_filename);
+				while(file_exists(userdata_path+"/rotation/"+random_file_name));
 				
 				std::string wallpaper_path = userdata_path+"/rotation/"+random_file_name;
 				
@@ -110,11 +126,11 @@ int main(int argc, char*argv[])
 				}
 				std::fclose(file);
 				
-				if(prev_wallpaper_filename.length()>0)
+				/*if(prev_wallpaper_filename.length()>0)
 				{
 					std::string old_wallpaper_path = userdata_path+"/rotation/"+prev_wallpaper_filename;
 					std::remove(old_wallpaper_path.c_str());
-				}
+				}*/
 				
 				prev_wallpaper_filename = random_file_name;
 			});
