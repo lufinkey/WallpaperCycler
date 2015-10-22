@@ -1,0 +1,310 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="external\libxml2++\libxml++\attribute.cc" />
+    <ClCompile Include="external\libxml2++\libxml++\attributedeclaration.cc" />
+    <ClCompile Include="external\libxml2++\libxml++\attributenode.cc" />
+    <ClCompile Include="external\libxml2++\libxml++\document.cc" />
+    <ClCompile Include="external\libxml2++\libxml++\dtd.cc" />
+    <ClCompile Include="external\libxml2++\libxml++\exceptions\exception.cc" />
+    <ClCompile Include="external\libxml2++\libxml++\exceptions\internal_error.cc" />
+    <ClCompile Include="external\libxml2++\libxml++\exceptions\parse_error.cc" />
+    <ClCompile Include="external\libxml2++\libxml++\exceptions\validity_error.cc" />
+    <ClCompile Include="external\libxml2++\libxml++\io\istreamparserinputbuffer.cc" />
+    <ClCompile Include="external\libxml2++\libxml++\io\ostreamoutputbuffer.cc" />
+    <ClCompile Include="external\libxml2++\libxml++\io\outputbuffer.cc" />
+    <ClCompile Include="external\libxml2++\libxml++\io\parserinputbuffer.cc" />
+    <ClCompile Include="external\libxml2++\libxml++\keepblanks.cc" />
+    <ClCompile Include="external\libxml2++\libxml++\nodes\cdatanode.cc" />
+    <ClCompile Include="external\libxml2++\libxml++\nodes\commentnode.cc" />
+    <ClCompile Include="external\libxml2++\libxml++\nodes\contentnode.cc" />
+    <ClCompile Include="external\libxml2++\libxml++\nodes\element.cc" />
+    <ClCompile Include="external\libxml2++\libxml++\nodes\entitydeclaration.cc" />
+    <ClCompile Include="external\libxml2++\libxml++\nodes\entityreference.cc" />
+    <ClCompile Include="external\libxml2++\libxml++\nodes\node.cc" />
+    <ClCompile Include="external\libxml2++\libxml++\nodes\processinginstructionnode.cc" />
+    <ClCompile Include="external\libxml2++\libxml++\nodes\textnode.cc" />
+    <ClCompile Include="external\libxml2++\libxml++\nodes\xincludeend.cc" />
+    <ClCompile Include="external\libxml2++\libxml++\nodes\xincludestart.cc" />
+    <ClCompile Include="external\libxml2++\libxml++\noncopyable.cc" />
+    <ClCompile Include="external\libxml2++\libxml++\parsers\domparser.cc" />
+    <ClCompile Include="external\libxml2++\libxml++\parsers\parser.cc" />
+    <ClCompile Include="external\libxml2++\libxml++\parsers\saxparser.cc" />
+    <ClCompile Include="external\libxml2++\libxml++\parsers\textreader.cc" />
+    <ClCompile Include="external\libxml2++\libxml++\relaxngschema.cc" />
+    <ClCompile Include="external\libxml2++\libxml++\schema.cc" />
+    <ClCompile Include="external\libxml2++\libxml++\schemabase.cc" />
+    <ClCompile Include="external\libxml2++\libxml++\validators\dtdvalidator.cc" />
+    <ClCompile Include="external\libxml2++\libxml++\validators\relaxngvalidator.cc" />
+    <ClCompile Include="external\libxml2++\libxml++\validators\schemavalidator.cc" />
+    <ClCompile Include="external\libxml2++\libxml++\validators\schemavalidatorbase.cc" />
+    <ClCompile Include="external\libxml2++\libxml++\validators\validator.cc" />
+    <ClCompile Include="external\libxml2++\libxml++\validators\xsdvalidator.cc" />
+    <ClCompile Include="external\libxml2++\libxml++\xsdschema.cc" />
+    <ClCompile Include="external\sqlite\sqlite3.c" />
+    <ClCompile Include="src\main.cpp" />
+    <ClCompile Include="src\wallcycler\libxml_plus\libxml_plus.cpp" />
+    <ClCompile Include="src\wallcycler\parse\AlphaCoders.cpp" />
+    <ClCompile Include="src\wallcycler\request\HttpRequest.cpp" />
+    <ClCompile Include="src\wallcycler\request\HttpResponse.cpp" />
+    <ClCompile Include="src\wallcycler\util\posixtime.cpp" />
+    <ClCompile Include="src\wallcycler\util\WebUtils.cpp" />
+    <ClCompile Include="src\wallcycler\WallpaperManager.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="external\iconv\include\iconv.h" />
+    <ClInclude Include="external\libxml2++\libxml++config.h" />
+    <ClInclude Include="external\libxml2++\libxml++\attribute.h" />
+    <ClInclude Include="external\libxml2++\libxml++\attributedeclaration.h" />
+    <ClInclude Include="external\libxml2++\libxml++\attributenode.h" />
+    <ClInclude Include="external\libxml2++\libxml++\document.h" />
+    <ClInclude Include="external\libxml2++\libxml++\dtd.h" />
+    <ClInclude Include="external\libxml2++\libxml++\exceptions\exception.h" />
+    <ClInclude Include="external\libxml2++\libxml++\exceptions\internal_error.h" />
+    <ClInclude Include="external\libxml2++\libxml++\exceptions\parse_error.h" />
+    <ClInclude Include="external\libxml2++\libxml++\exceptions\validity_error.h" />
+    <ClInclude Include="external\libxml2++\libxml++\io\istreamparserinputbuffer.h" />
+    <ClInclude Include="external\libxml2++\libxml++\io\ostreamoutputbuffer.h" />
+    <ClInclude Include="external\libxml2++\libxml++\io\outputbuffer.h" />
+    <ClInclude Include="external\libxml2++\libxml++\io\parserinputbuffer.h" />
+    <ClInclude Include="external\libxml2++\libxml++\keepblanks.h" />
+    <ClInclude Include="external\libxml2++\libxml++\libxml++.h" />
+    <ClInclude Include="external\libxml2++\libxml++\nodes\cdatanode.h" />
+    <ClInclude Include="external\libxml2++\libxml++\nodes\commentnode.h" />
+    <ClInclude Include="external\libxml2++\libxml++\nodes\contentnode.h" />
+    <ClInclude Include="external\libxml2++\libxml++\nodes\element.h" />
+    <ClInclude Include="external\libxml2++\libxml++\nodes\entitydeclaration.h" />
+    <ClInclude Include="external\libxml2++\libxml++\nodes\entityreference.h" />
+    <ClInclude Include="external\libxml2++\libxml++\nodes\node.h" />
+    <ClInclude Include="external\libxml2++\libxml++\nodes\processinginstructionnode.h" />
+    <ClInclude Include="external\libxml2++\libxml++\nodes\textnode.h" />
+    <ClInclude Include="external\libxml2++\libxml++\nodes\xincludeend.h" />
+    <ClInclude Include="external\libxml2++\libxml++\nodes\xincludestart.h" />
+    <ClInclude Include="external\libxml2++\libxml++\noncopyable.h" />
+    <ClInclude Include="external\libxml2++\libxml++\parsers\domparser.h" />
+    <ClInclude Include="external\libxml2++\libxml++\parsers\parser.h" />
+    <ClInclude Include="external\libxml2++\libxml++\parsers\saxparser.h" />
+    <ClInclude Include="external\libxml2++\libxml++\parsers\textreader.h" />
+    <ClInclude Include="external\libxml2++\libxml++\relaxngschema.h" />
+    <ClInclude Include="external\libxml2++\libxml++\schema.h" />
+    <ClInclude Include="external\libxml2++\libxml++\schemabase.h" />
+    <ClInclude Include="external\libxml2++\libxml++\validators\dtdvalidator.h" />
+    <ClInclude Include="external\libxml2++\libxml++\validators\relaxngvalidator.h" />
+    <ClInclude Include="external\libxml2++\libxml++\validators\schemavalidator.h" />
+    <ClInclude Include="external\libxml2++\libxml++\validators\schemavalidatorbase.h" />
+    <ClInclude Include="external\libxml2++\libxml++\validators\validator.h" />
+    <ClInclude Include="external\libxml2++\libxml++\validators\xsdvalidator.h" />
+    <ClInclude Include="external\libxml2++\libxml++\xsdschema.h" />
+    <ClInclude Include="external\libxml2\include\libxml\c14n.h" />
+    <ClInclude Include="external\libxml2\include\libxml\catalog.h" />
+    <ClInclude Include="external\libxml2\include\libxml\chvalid.h" />
+    <ClInclude Include="external\libxml2\include\libxml\debugXML.h" />
+    <ClInclude Include="external\libxml2\include\libxml\dict.h" />
+    <ClInclude Include="external\libxml2\include\libxml\DOCBparser.h" />
+    <ClInclude Include="external\libxml2\include\libxml\encoding.h" />
+    <ClInclude Include="external\libxml2\include\libxml\entities.h" />
+    <ClInclude Include="external\libxml2\include\libxml\globals.h" />
+    <ClInclude Include="external\libxml2\include\libxml\hash.h" />
+    <ClInclude Include="external\libxml2\include\libxml\HTMLparser.h" />
+    <ClInclude Include="external\libxml2\include\libxml\HTMLtree.h" />
+    <ClInclude Include="external\libxml2\include\libxml\list.h" />
+    <ClInclude Include="external\libxml2\include\libxml\nanoftp.h" />
+    <ClInclude Include="external\libxml2\include\libxml\nanohttp.h" />
+    <ClInclude Include="external\libxml2\include\libxml\parser.h" />
+    <ClInclude Include="external\libxml2\include\libxml\parserInternals.h" />
+    <ClInclude Include="external\libxml2\include\libxml\pattern.h" />
+    <ClInclude Include="external\libxml2\include\libxml\relaxng.h" />
+    <ClInclude Include="external\libxml2\include\libxml\SAX.h" />
+    <ClInclude Include="external\libxml2\include\libxml\SAX2.h" />
+    <ClInclude Include="external\libxml2\include\libxml\schemasInternals.h" />
+    <ClInclude Include="external\libxml2\include\libxml\schematron.h" />
+    <ClInclude Include="external\libxml2\include\libxml\threads.h" />
+    <ClInclude Include="external\libxml2\include\libxml\tree.h" />
+    <ClInclude Include="external\libxml2\include\libxml\uri.h" />
+    <ClInclude Include="external\libxml2\include\libxml\valid.h" />
+    <ClInclude Include="external\libxml2\include\libxml\xinclude.h" />
+    <ClInclude Include="external\libxml2\include\libxml\xlink.h" />
+    <ClInclude Include="external\libxml2\include\libxml\xmlautomata.h" />
+    <ClInclude Include="external\libxml2\include\libxml\xmlerror.h" />
+    <ClInclude Include="external\libxml2\include\libxml\xmlexports.h" />
+    <ClInclude Include="external\libxml2\include\libxml\xmlIO.h" />
+    <ClInclude Include="external\libxml2\include\libxml\xmlmemory.h" />
+    <ClInclude Include="external\libxml2\include\libxml\xmlmodule.h" />
+    <ClInclude Include="external\libxml2\include\libxml\xmlreader.h" />
+    <ClInclude Include="external\libxml2\include\libxml\xmlregexp.h" />
+    <ClInclude Include="external\libxml2\include\libxml\xmlsave.h" />
+    <ClInclude Include="external\libxml2\include\libxml\xmlschemas.h" />
+    <ClInclude Include="external\libxml2\include\libxml\xmlschemastypes.h" />
+    <ClInclude Include="external\libxml2\include\libxml\xmlstring.h" />
+    <ClInclude Include="external\libxml2\include\libxml\xmlunicode.h" />
+    <ClInclude Include="external\libxml2\include\libxml\xmlversion.h" />
+    <ClInclude Include="external\libxml2\include\libxml\xmlwriter.h" />
+    <ClInclude Include="external\libxml2\include\libxml\xpath.h" />
+    <ClInclude Include="external\libxml2\include\libxml\xpathInternals.h" />
+    <ClInclude Include="external\libxml2\include\libxml\xpointer.h" />
+    <ClInclude Include="external\sqlite\sqlite3.h" />
+    <ClInclude Include="src\wallcycler\exception\invalid_state.h" />
+    <ClInclude Include="src\wallcycler\libxml_plus\libxml_plus.h" />
+    <ClInclude Include="src\wallcycler\parse\AlphaCoders.h" />
+    <ClInclude Include="src\wallcycler\parse\WallpaperSource.h" />
+    <ClInclude Include="src\wallcycler\request\HttpRequest.h" />
+    <ClInclude Include="src\wallcycler\request\HttpResponse.h" />
+    <ClInclude Include="src\wallcycler\util\posixtime.h" />
+    <ClInclude Include="src\wallcycler\util\WebUtils.h" />
+    <ClInclude Include="src\wallcycler\WallpaperManager.h" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{62B39DCF-FAC7-4552-B2A7-5060432185E7}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>WallpaperCycler</RootNamespace>
+    <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>external/libxml2/include;external/libxml2++;external/iconv/include;external/sqlite;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>external/libxml2/lib;external/iconv/lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>libxml2_debug.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>external/libxml2/include;external/libxml2++;external/iconv/include;external/sqlite;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalLibraryDirectories>external/libxml2/lib;external/iconv/lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>libxml2.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
