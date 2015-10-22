@@ -119,7 +119,7 @@ int main(int argc, char*argv[])
 				prev_wallpaper_filename = random_file_name;
 			});
 		});
-		std::this_thread::sleep_for(std::chrono::hours(24));
+		std::this_thread::sleep_for(std::chrono::hours(6));
 	}
 	return 0;
 }

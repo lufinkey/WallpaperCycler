@@ -1,6 +1,7 @@
 
 #include "WallpaperManager.h"
 #include "util/WebUtils.h"
+#include "util/posixtime.h"
 #include <thread>
 #include <iostream>
 
@@ -307,6 +308,9 @@ namespace wallcycler
 				loadNextWallpaper(onload, new_sources_and_tags);
 				return;
 			}
+			timeval srand_time;
+			gettimeofday(&srand_time, nullptr);
+			std::srand((unsigned int)srand_time.tv_usec);
 			size_t random_wallpaper_index = (size_t)(((double)std::rand()/(double)RAND_MAX)*(double)searchData.results.size());
 			std::cout << "Selected random index: " << random_wallpaper_index << std::endl;
 			Wallpaper wallpaper = searchData.results[random_wallpaper_index];
